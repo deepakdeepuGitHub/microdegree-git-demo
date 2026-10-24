@@ -1,0 +1,9 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirments.txt .
+RUN pip install --no-cache-dir -r requirments.txt
+COPY app.py .
+RUN useradd -m appuser
+USER appuser
+EXPOSE 8080
+CMD ["python", "app.py"]
