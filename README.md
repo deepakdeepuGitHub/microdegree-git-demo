@@ -1,2 +1,1 @@
-# microdegree-git-demo
-This repo consists of file
+This is local devops in home labarotry installed in local machine with out cloud
